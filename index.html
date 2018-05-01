@@ -5,13 +5,19 @@
         <meta charset="utf-8">
         <title>Packing List Tool</title>
         <link rel="stylesheet" href="css/bootstrap.min.css"  type="text/css" media="screen">
+        <link rel="stylesheet" href="css/style.css"  type="text/css" media="screen">
+        <link rel="stylesheet" href="css/packing-list-vis.css"  type="text/css" media="screen">
+        <link rel="stylesheet" href="css/map.css"  type="text/css" media="screen">
+        <link rel="stylesheet" href="css/filter-bar.css"  type="text/css" media="screen">
     <body>
         <div class="container" id="packing-list-vis">
-            <div class="row">
+            <div class="row" id="masthead">
+            </div>
+            <div class="row" id="packing-list-content">
                 <div class="col-sm-9" id="map">
                     <h2>Map goes here</h2>
                 </div>
-                <div class="col-sm-3" id="packing-list-sidebar">
+                <div class="col-sm-3" id="filter-sidebar">
                     <h5>PACKING LIST</h5>
                     <h1 id="list-location">AUSTRALIA</h1>
                     <div class="row">
@@ -33,8 +39,8 @@
         </div>
 
         <!-- page content -->
-        <script src="js/bootstrap.min.js"></script>
         <script src="js/d3.v4.js"></script>
         <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
