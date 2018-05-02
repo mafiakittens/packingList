@@ -13,14 +13,29 @@
     <body>
         <div class="container-fluid" id="packing-list-vis">
             <div class="row" id="masthead">
-                <a class="col-sm-3" id="logo" href="">
+                <a class="col-sm-3" id="logo" href="index.html">
                     <img src="assets/ttb_logo.png" alt="VW Bug Icon">
                     <div id="title">THE TRAVELING BUG</div></a>
                 <div class="col-sm-6" id="nav">
-                    NAVIGATION
+                    <a class="nav-item" id="nav1" href="">TRAVEL</a>
+                    <a class="nav-item" id="nav2" href="">MINIMALISM</a>
+                    <a class="nav-item" id="nav3" href="">SCIENCING</a>
+                    <a class="nav-item" id="nav4" href="">FREEBIES</a>
+                    <a class="nav-item" id="nav5" href="">ABOUT</a>
                 </div>
                 <div class="col-sm-3" id="social-links">
-                    LINKS
+                    <a href="">
+                        <img class="social-icon" src="assets/icon_email.png">
+                    </a>
+                    <a href="">
+                        <img class="social-icon" src="assets/icon_pinterest.png">
+                    </a>
+                    <a href="">
+                        <img class="social-icon" src="assets/icon_fb.png">
+                    </a>
+                    <a href="https://www.instagram.com/the.traveling.bug/">
+                        <img class="social-icon" src="assets/icon_insta.png">
+                    </a>
                 </div>
             </div>
             <div class="row" id="packing-list-content">
@@ -30,26 +45,23 @@
                 <div class="col-sm-3" id="filter-sidebar">
                     <h5 id="super-title">PACKING LIST</h5>
                     <h1 id="list-main-title">AUSTRALIA</h1>
+                    <div class="break-line"></div>
                     <div class="list-item-header">
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <h4 class="list-header">CLOTHES</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                expand
-                            </div>
-                        </div>
+                        <h5 class="list-header">CLOTHES</h5>
+                        <button class="expand-conceal">
+                            <span class="expand-triangle"></span>
+                            <!-- <span class="conceal-minus"></span> -->
+                        </button>
                     </div>
+                    <div class="break-line"></div>
                     <div class="list-item-header">
-                        <div class="row">
-                            <div class="col-sm-10">
-                                <h4 class="list-header">FOOTWEAR</h4>
-                            </div>
-                            <div class="col-sm-2">
-                                expand
-                            </div>
-                        </div>
+                        <h5 class="list-header">FOOTWEAR</h5>
+                        <button class="expand-conceal">
+                            <span class="expand-triangle"></span>
+                            <!-- <span class="conceal-minus"></span> -->
+                        </button>
                     </div>
+                    <div class="break-line"></div>
                     <div class="list-item-contents">
                         <div class="row">
                             <ul class="sub-cat-items">
@@ -67,5 +79,6 @@
         <script src="js/d3.v4.js"></script>
         <script src="js/jquery-1.11.0.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/filter-bar.js"></script>
     </body>
 </html>

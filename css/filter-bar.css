@@ -14,52 +14,78 @@ h1, h2, h3, h4, h5, h6{
 #super-title{
     color:rgb(0,0,0,.4);
 }
-.list-item-header, .list-item-contents{
-    height:53px;
+.list-item-header{
+    height:56px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
     margin-right: auto;
     margin-left: auto;
     position:relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.list-item-header::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 80%;
-    left: 10%;
-    border-top: 1px solid rgb(0,0,0,.3);
+.list-item-contents{
+    width: 100%;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-item-contents .row{
+    width:100%;
+}
+.list-item-header.row:before, .list-item-header.row:after{
+    display:none;
 }
 .sub-cat-items{
     width:100%;
     margin:15px;
-    padding:0;
+    padding:0 0 0 25px;
     list-style-type: none;
-    /*margin: 0px;*/
-}
-.sub-cat-items::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 80%;
-    left: 10%;
-    border-top: 1px solid rgb(0,0,0,.3);
+    line-height: 26px;
 }
 .break-line {
     content: '';
     display: block;
     position: absolute;
-    /*top: 0;*/
-    width: 80%;
-    left: 10%;
+    width: 85%;
+    left: 7.5%;
     border-top: 1px solid rgb(0,0,0,.3);
 }
 .list-header{
-    /*width:100%;*/
     text-align: left;
+    display:flex;
+}
+.expand-conceal{
+    height:40px;
+    width:40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding:0;
+    margin: 0;
+}
+.expand-triangle{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #000000;
+    /*position:absolute;*/
+}
+.conceal-minus{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000000;
 }
