@@ -1,4 +1,65 @@
 #filter-sidebar{
     height: 100%;
+    min-height: 600px;
     background-color: #EADDD3;
+    padding:20px 0 20px 0;
+}
+h1, h2, h3, h4, h5, h6{
+    text-align: center;
+}
+#list-main-title{
+    padding-bottom:8%;
+    margin:0;
+}
+#super-title{
+    color:rgb(0,0,0,.4);
+}
+.list-item-header, .list-item-contents{
+    height:53px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position:relative;
+    display: flex;
+    align-items: center;
+}
+.list-item-header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 10%;
+    border-top: 1px solid rgb(0,0,0,.3);
+}
+.sub-cat-items{
+    width:100%;
+    margin:15px;
+    padding:0;
+    list-style-type: none;
+    /*margin: 0px;*/
+}
+.sub-cat-items::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 80%;
+    left: 10%;
+    border-top: 1px solid rgb(0,0,0,.3);
+}
+.break-line {
+    content: '';
+    display: block;
+    position: absolute;
+    /*top: 0;*/
+    width: 80%;
+    left: 10%;
+    border-top: 1px solid rgb(0,0,0,.3);
+}
+.list-header{
+    /*width:100%;*/
+    text-align: left;
 }

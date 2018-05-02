@@ -9,31 +9,56 @@
         <link rel="stylesheet" href="css/packing-list-vis.css"  type="text/css" media="screen">
         <link rel="stylesheet" href="css/map.css"  type="text/css" media="screen">
         <link rel="stylesheet" href="css/filter-bar.css"  type="text/css" media="screen">
+        <link rel="shortcut icon" href="assets/ttb_logo.png">
     <body>
-        <div class="container" id="packing-list-vis">
+        <div class="container-fluid" id="packing-list-vis">
             <div class="row" id="masthead">
+                <a class="col-sm-3" id="logo" href="">
+                    <img src="assets/ttb_logo.png" alt="VW Bug Icon">
+                    <div id="title">THE TRAVELING BUG</div></a>
+                <div class="col-sm-6" id="nav">
+                    NAVIGATION
+                </div>
+                <div class="col-sm-3" id="social-links">
+                    LINKS
+                </div>
             </div>
             <div class="row" id="packing-list-content">
                 <div class="col-sm-9" id="map">
                     <h2>Map goes here</h2>
                 </div>
                 <div class="col-sm-3" id="filter-sidebar">
-                    <h5>PACKING LIST</h5>
-                    <h1 id="list-location">AUSTRALIA</h1>
-                    <div class="row">
-                        <div class="col-sm-10">
-                            <h4>CLOTHES</h4>
-                        </div>
-                        <div class="col-sm-2">
-                            expand
+                    <h5 id="super-title">PACKING LIST</h5>
+                    <h1 id="list-main-title">AUSTRALIA</h1>
+                    <div class="list-item-header">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <h4 class="list-header">CLOTHES</h4>
+                            </div>
+                            <div class="col-sm-2">
+                                expand
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <ul>
-                            <li>2 shirts</li>
-                            <li>2 pants</li>
-                        </ul>
+                    <div class="list-item-header">
+                        <div class="row">
+                            <div class="col-sm-10">
+                                <h4 class="list-header">FOOTWEAR</h4>
+                            </div>
+                            <div class="col-sm-2">
+                                expand
+                            </div>
+                        </div>
                     </div>
+                    <div class="list-item-contents">
+                        <div class="row">
+                            <ul class="sub-cat-items">
+                                <li>2 shirts</li>
+                                <li>2 pants</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="break-line"></div>
                 </div>
             </div>
         </div>
