@@ -36,10 +36,7 @@ h6{
     font-weight:700;
 }
 #masthead{ /* google standard, adopted from youtube masthead */
-    height: 56px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*height: 56px;*/
     border-bottom-style:solid;
     border-bottom-width: thin;
 }
@@ -57,7 +54,7 @@ h6{
     text-decoration: none;
     color:black;
 }
-#logo img{
+.navbar-brand img{
     height:30px;
 }
 #nav{
